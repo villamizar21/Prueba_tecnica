@@ -11,6 +11,7 @@ composeBom = "2024.04.01"
 retrofit = "2.9.0"
 hilt = "2.51.1"
 androidxHiltNavigationCompose = "1.2.0-alpha01"
+androidGradlePlugin = "8.1.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,4 +39,8 @@ androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-com
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 
